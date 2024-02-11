@@ -12,6 +12,9 @@ const Countries = () => {
 
    return (
       <div >
+         <div>
+            <h1>Total Countries : {countries.length} </h1>
+         </div>
          <div className='countries-style'>
             {
                countries.map(country => <Country country={country} key = {country.cca3}></Country>)
